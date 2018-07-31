@@ -1,0 +1,13 @@
+prefix
+c - create
+i - insert
+
+
+suffix
+tbl - table
+
+
+example naming convention of script
+
+cprodtbl.sql = create product table
+
