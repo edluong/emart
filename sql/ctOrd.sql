@@ -3,7 +3,5 @@ create table tOrder(
     cid int REFERENCES tcustomer(cid),
     orddate timestamp default now(),
     shipdate timestamp,
-    shipaddr varchar(50),
-    shipcity varchar(35),
-    shipzip varchar(12)
+    ordstatusdef varchar(10)
     )  
