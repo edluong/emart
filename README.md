@@ -2,8 +2,8 @@ To do list:
 - [X] create tCustAddr - customer address table
 - [X] replace the ship columns from tOrder and replace them into tCustAddr
 - [X] add a status column (ordStatusDef) for tOrder
-- [ ] add a lookup table tOrderStatus to define the shorthand of the status
-- [ ] add statuses ordered (OD) and cancelled (CA) to tOrderStatus
+- [X] add a lookup table tOrderStatus to define the shorthand of the status
+- [X] add statuses ordered (OR) and cancelled (CA) to tOrderStatus
 - [ ] create a stored procedure to place an order spPlaceOrder @cid, @pid, @discount, @qty (
   - [ ] creates a new order
   - [ ] populates the order table (populates with a ordered default status)
