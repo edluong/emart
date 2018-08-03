@@ -1,3 +1,7 @@
+# eMart Website (Work in Progress)
+## a website where customers can create orders and cancel orders
+## Technologies used: PostgresSQL, Node.js, Express 
+
 ## Weekly to do list
 - [X] create tCustAddr - customer address table
 - [X] replace the ship columns from tOrder and replace them into tCustAddr
