@@ -4,8 +4,13 @@ To do list:
 - [X] add a status column (ordStatusDef) for tOrder
 - [X] add a lookup table tOrderStatus to define the shorthand of the status
 - [X] add statuses ordered (OR) and cancelled (CA) to tOrderStatus
-- [X] create a stored procedure to place an order spPlaceOrder @cid, @pid, @discount, @qty (
+- [X] create a stored procedure to place an order spPlaceOrderIS @cid, @pid, @discount, @qty (
   - [X] creates a new order
   - [X] populates the order table (populates with a ordered default status)
   - [X] populates the orderdetail table)
-- [ ] create a stored procedure to cancel an order spCancelOrder
+  - [X] QA Complete
+- [ ] create a stored procedure to cancel an order spCancelOrderIS
+  - [ ] QA Complete
+- [ ] set up node project
+- [ ] install express
+- [ ] create .gitignore for the node_modules and other potential files

@@ -3,26 +3,25 @@ create function spPlaceOrderIS(p_cid int,
                                p_qty int,
                                p_discount int default 0)
 returns void as $$
+declare n_oid torder.oid%TYPE; -- this uses the same type as the oid in torder table
 begin
-
-declare n_oid torder.oid%TYPE;
-
 	/*
     	creates a new order 
         shipping is assumed to be done the day after
     */
 	insert into torder(cid,shipdate,orderstatusval)
-    values(p_cid,dateadd(day,1,current_date),'OR')
+    values(p_cid,current_date + 1,'OR')
     returning oid into n_oid;
     
     /*
     	populates torderdetail
     */
     insert into torderdetail(oid,prodid,cid,quantity,discount)
-    values(n_oid,p_prodid,p_cid,p_qty,p_discount)
+    values(n_oid,p_prodid,p_cid,p_qty,p_discount);
     
 end;
 $$ language plpgsql;
+
         
         
                                
