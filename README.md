@@ -2,7 +2,7 @@
 ## a website where customers can create orders and cancel orders
 ## Technologies used: PostgresSQL, Node.js, Express 
 
-## Week 2 To do
+## Week 2 To Do
 - [ ] install pg-promise
 - [ ] call a basic select statement and print out the results
 - [ ] write a basic route to serve a static html page
@@ -14,7 +14,7 @@
 - [ ] create audit table called torder_adt
 - [ ] create trigger on torder when there is an update (this will be before the update)
 
-### Archive of tasks done:
+### Archive of tasks done
 ### Week 1
 - [X] create tCustAddr - customer address table
 - [X] replace the ship columns from tOrder and replace them into tCustAddr
