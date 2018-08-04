@@ -1,0 +1,23 @@
+{
+  "name": "emart",
+  "version": "1.0.0",
+  "description": "- [X] create tCustAddr - customer address table\r - [X] replace the ship columns from tOrder and replace them into tCustAddr\r - [X] add a status column (ordStatusDef) for tOrder\r - [X] add a lookup table tOrderStatus to define the shorthand of the status\r - [X] add statuses ordered (OR) and cancelled (CA) to tOrderStatus\r - [X] create a stored procedure to place an order spPlaceOrderIS @cid, @pid, @discount, @qty \r   - [X] creates a new order\r   - [X] populates the order table (populates with a ordered default status)\r   - [X] populates the orderdetail table\r   - [X] QA Complete\r - [X] create a stored procedure to cancel an order spCancelOrderIS\r   - [X] QA Complete\r - [X] insert a canceltime column in torder to see when an order was cancelled, default is null\r - [X] modify the existing spCancelOrderUS to insert the current_time to canceltime column\r - [ ] set up node project\r - [ ] install express\r - [ ] create .gitignore for the node_modules and other potential files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edluong/emart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edluong/emart/issues"
+  },
+  "homepage": "https://github.com/edluong/emart#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

@@ -2,7 +2,20 @@
 ## a website where customers can create orders and cancel orders
 ## Technologies used: PostgresSQL, Node.js, Express 
 
-## Weekly to do list
+## Week 2 To do
+- [ ] install pg-promise
+- [ ] call a basic select statement and print out the results
+- [ ] write a basic route to serve a static html page
+- [ ] write a simple insert route
+
+
+## Bonus feature 
+- [ ] create audit schema
+- [ ] create audit table called torder_adt
+- [ ] create trigger on torder when there is an update (this will be before the update)
+
+### Archive of tasks done:
+### Week 1
 - [X] create tCustAddr - customer address table
 - [X] replace the ship columns from tOrder and replace them into tCustAddr
 - [X] add a status column (ordStatusDef) for tOrder
@@ -17,11 +30,6 @@
   - [X] QA Complete
 - [X] insert a canceltime column in torder to see when an order was cancelled, default is null
 - [X] modify the existing spCancelOrderUS to insert the current_time to canceltime column
-- [ ] set up node project
-- [ ] install express
-- [ ] create .gitignore for the node_modules and other potential files
-
-## Bonus feature 
-- [ ] create audit schema
-- [ ] create audit table called torder_adt
-- [ ] create trigger on torder when there is an update (this will be before the update)
+- [X] set up node project
+- [X] install express
+- [X] create .gitignore for the node_modules and other potential files
