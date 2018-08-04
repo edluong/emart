@@ -5,10 +5,13 @@ begin
         Wont be shipping the order anymore.
     */
          update torder ord
-         set ord.orderstatusval = 'CA',
-         ord.shipdate = NULL
+         set orderstatusval = 'CA',
+         shipdate = NULL,
+         canceldate = now()
          where ord.oid = p_oid;
 	
     return;               
 end;
-$$ LANGUAGE plpgsql; 	
+$$ LANGUAGE plpgsql;
+
+--drop function spCancelOrderUS
