@@ -15,8 +15,8 @@
   - [X] QA Complete
 - [X] create a stored procedure to cancel an order spCancelOrderIS
   - [X] QA Complete
-- [ ] insert a canceltime column in torder to see when an order was cancelled, default is null
-- [ ] modify the existing spCancelOrderUS to insert the current_time to canceltime column
+- [X] insert a canceltime column in torder to see when an order was cancelled, default is null
+- [X] modify the existing spCancelOrderUS to insert the current_time to canceltime column
 - [ ] set up node project
 - [ ] install express
 - [ ] create .gitignore for the node_modules and other potential files
